@@ -10,8 +10,8 @@ import java.time.Period;
 @Table
 public class Student {
     @Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
-private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
     private String name;
     private String email;
