@@ -54,7 +54,8 @@ Represents the Student data stored in the MySQL database.
 ## Database
 
 - **Database:** MySQL
-- **ORM:** Spring Data JPA + Hibernate
+- **ORM:** Spring Data JPA
+  
 
 The original tutorial project used PostgreSQL. This project was modified and configured to use MySQL as the database.
 
