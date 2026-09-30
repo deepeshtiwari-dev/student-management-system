@@ -1,8 +1,6 @@
 # Student Management System
 
-A RESTful Student Management System built using Java and Spring Boot.
-The application provides CRUD operations for managing student records
-using a MySQL database.
+A RESTful Student Management System built using Java and Spring Boot. The application provides CRUD operations for managing student records using a MySQL database.
 
 ## Tech Stack
 
@@ -18,7 +16,6 @@ using a MySQL database.
 
 - Add a new student
 - Retrieve all students
-- Retrieve student details
 - Update student information
 - Delete a student
 - Email uniqueness validation
@@ -30,21 +27,25 @@ using a MySQL database.
 Controller → Service → Repository → MySQL
 
 ### Controller
+
 Handles HTTP requests and exposes REST API endpoints.
 
 ### Service
+
 Contains the business logic of the application.
 
 ### Repository
+
 Uses Spring Data JPA to interact with the database.
 
 ### Entity
+
 Represents the Student data stored in the MySQL database.
 
 ## CRUD Operations
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
+| **Method** | **Endpoint** | **Description** |
+| ---------- | ------------ | --------------- |
 | GET | `/api/v1/student` | Get all students |
 | POST | `/api/v1/student` | Add a new student |
 | PUT | `/api/v1/student/{id}` | Update student details |
@@ -52,29 +53,25 @@ Represents the Student data stored in the MySQL database.
 
 ## Database
 
-The original tutorial project used PostgreSQL.
-The project was modified and configured to use **MySQL** as the database.
+- **Database:** MySQL
+- **ORM:** Spring Data JPA + Hibernate
 
-The application uses Spring Data JPA and Hibernate for database
-interaction and persistence.
+The original tutorial project used PostgreSQL. This project was modified and configured to use MySQL as the database.
 
 ## How to Run
 
 1. Clone the repository.
-2. Create a MySQL database.
-3. Configure the database credentials in `application.properties`.
+2. Create a MySQL database named `student`.
+3. Configure your MySQL credentials in `application.properties`.
 4. Build the project using Maven.
 5. Run the Spring Boot application.
 6. Test the REST APIs using Postman or another API client.
 
 ## Learning Reference
 
-This project was adapted from a Spring Boot CRUD tutorial by
-Amigoscode.
+This project was adapted from a Spring Boot CRUD tutorial by Amigoscode.
 
-The original tutorial was used as a learning reference, and the
-project was subsequently customized and configured for MySQL-based
-student management.
+The original tutorial was used as a learning reference, and the project was subsequently customized and configured for MySQL-based student management.
 
 ## Author
 
